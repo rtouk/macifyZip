@@ -1,0 +1,29 @@
+macifyZip 1.0
+
+usage: macifyZip {zipFile} [zipFile ...] [--outputZip ZIPFILE] [--modifyAttr
+  FILE] [--all] [--locate] [--verbose] [--silent] [--help]
+
+    {required}:
+      zipFile       one or more ZIP files containing a Mac executable
+    
+    [optional]:
+      outputZip     output ZIP file (otherwise, overwrite input ZIP file)
+      modifyAttr    modify attributes of specific files within ZIP
+      all           modify attributes of ALL files within ZIP
+      locate        locate file in explorer when finished
+      verbose       display detailed information while processing
+      silent        display no text output (not even errors)
+      help          show this help
+    
+    
+    This program modifies ZIP file attributes to fix Mac app permissions.
+    It marks the platform as 'UNIX' and sets permissions 0755.
+    
+    By default, it looks for files in *.app/Contents/MacOS/* format.
+    You can also use --modifyAttr to modify specific files, or --all.
+    
+    You can specify --outputZip to write to a separate ZIP file.
+    (This can only be used when specifying one input ZIP, not multiple.)
+    
+    Switches can be abbreviated, such as -o for --outputZip, -h for --help.
+
