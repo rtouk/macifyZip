@@ -1,13 +1,12 @@
-macifyZip 1.0
+macifyZip 1.1
 
-usage: macifyZip {zipFile} [zipFile ...] [--outputZip ZIPFILE] [--modifyAttr
+usage: macifyZip [zipFile ...] [--outputZip ZIPFILE] [--browse] [--modifyAttr
   FILE] [--all] [--locate] [--verbose] [--silent] [--help]
 
-    {required}:
-      zipFile       one or more ZIP files containing a Mac executable
-    
     [optional]:
+      zipFile       one or more ZIP files containing a Mac executable
       outputZip     output ZIP file (otherwise, overwrite input ZIP file)
+      browse        browse for ZIP files (default if nothing specified)
       modifyAttr    modify attributes of specific files within ZIP
       all           modify attributes of ALL files within ZIP
       locate        locate file in explorer when finished
