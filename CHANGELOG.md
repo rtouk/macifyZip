@@ -4,6 +4,11 @@ See [README](./README.md) for more information
 
 ## Changelog
 
+### Version 1.3
+
+- If exactly one file exists in ZIP, assume you intend to modify that file's permissions
+- Improved normalization of input file paths
+
 ### Version 1.2
 
 - Hide directory records in ZIP contents list unless `--directories` is specified

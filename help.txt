@@ -1,4 +1,4 @@
-macifyZip 1.2
+macifyZip 1.3
 
 usage: macifyZip [zipFile ...] [--outputZip ZIPFILE] [--browse]
   [--modifyAttr FILE] [--all] [--locate] [--directories] [--verbose]
